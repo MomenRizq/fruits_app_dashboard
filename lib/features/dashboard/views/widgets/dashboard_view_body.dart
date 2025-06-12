@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruits_app_dashboard/features/add_product/presentation/views/add_product_view.dart';
 
 
 import '../../../../core/widgets/custom_button.dart';
@@ -14,7 +15,9 @@ import '../../../../core/widgets/custom_button.dart';
          mainAxisAlignment: MainAxisAlignment.center,
          children: [
            CustomButton(
-             onPressed: () {},
+              onPressed: () {
+               Navigator.pushNamed(context, AddProductView.routeName);
+             },
              text: 'Add Data',
            ),
          ],
